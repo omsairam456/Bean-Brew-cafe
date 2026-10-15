@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Brew Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <nav class="navbar">
+       <div class="logo">
+         ˗ˏˋ Bean & Brew ˎˊ˗
+       </div>
+       <ul class="nav-links">
+        <li>
+          <a href="#home">Home</a>
+          </li>
+          <li>
+          <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+            <section class="hero" id="home">
+        <h1>Welcome to Bean & Brew</h1>
+        <p>
+          Freshly brewed coffee, delicious food,
+          and a warm place to relax with friends.
+        </p>
+        <a href="#menu" class="hero-button">
+          Explore Our Menu 
+        </a>
+      </section> 
+
+      <section class="section" id="menu">
+        <h2 class="section-title">
+          Our Popular Menu 
+        </h2>
+
+        <div class="menu-grid" id="menuList"></div>
+
+        <form class="menu-form" id="menuForm">
+          <h3 id="formTitle">Add a menu item</h3>
+          <input type="hidden" id="itemId" />
+          <label>
+            Name
+            <input id="itemName" name="name" type="text" required />
+          </label>
+          <label>
+            Description
+            <input id="itemDescription" name="description" type="text" required />
+          </label>
+          <label>
+            Price (₹)
+            <input id="itemPrice" name="price" type="number" min="1" step="1" required />
+          </label>
+          <button type="submit" id="submitButton">Add item</button>
+          <button type="button" id="cancelEdit" hidden>Cancel edit</button>
+        </form>
+      </section> 
+
+      <section class="section" id="about">
+        <div class="about">
+          <div class="about-image">
+          </div>
+          <div class="about-content">
+            <h2>About Our Cafe</h2>
+            <p>
+              Welcome to our cozy neighborhood
+               haven, where the aroma of freshly roasted 
+               coffee beans pairs perfectly with the sweet scent 
+               of morning bakes.
+            </p>
+            <p>
+              We proudly brew artisanal, sustainably sourced 
+              coffee alongside a daily selection of scratch-made pastries
+               and gourmet cupcakes.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <h2 class="section-title">Visit Us</h2>
+        <p>📍123 coffee Street,Hyderabad</p>
+        <p>📞+91 98765 43210 </p>
+        <p>📧hello@beanandbrew.com</p>
+        <p>⏳Monday-Sunday : 8:00AM-10:00PM</p>
+        </section>
+        <footer>
+          <p>©️2026 Bean & Brew Cafe</p>
+          <p>Crafted with HTML and CSS</p>
+        </footer>
+  </body>
+</html>
